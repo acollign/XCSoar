@@ -169,6 +169,7 @@ void
 WriteCup(BufferedOutputStream &writer, const Waypoints &waypoints,
          WaypointOrigin origin)
 {
+  writer.Write("name,code,country,lat,lon,elev,style,rwdir,rwlen,rwwidth,freq,desc,userdata,pics\n");
   // Iterate through the waypoint list and save each waypoint with
   // the right file number to the BufferedOutputStream
   /// @todo JMW: iteration ordered by ID would be preferred
